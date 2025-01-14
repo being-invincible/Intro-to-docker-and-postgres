@@ -22,7 +22,7 @@ print(f"Hello from {filename}! on {date}")
 
 Setup the connection using the docker command
 
-```docker
+```bash
 docker run -it \  
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
@@ -34,11 +34,14 @@ postgres:13
 
 **Note:**
 If you have run Postgres before, the same ports might not be available. Kill them first with this cmds:
-(List of ports)
-```
+
+```bash
 sudo lsof -i :5432 
 sudo kill -9 <process_id>
 ```
+
+1. The first command lists all the active port listening and find the active process_id(pid)
+2. Use the later command to kill/delete the process.
 
 # Download the data
 
@@ -48,4 +51,5 @@ wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_z
 
 # Follow the Jupyter Notebook
 
-https://github.com/being-invincible/Intro-to-docker-and-postgres/blob/main/workwithDB.ipynb
+[workwithDB Notebook](https://github.com/being-invincible/Intro-to-docker-and-postgres/blob/main/workwithDB.ipynb)
+
