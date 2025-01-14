@@ -6,7 +6,7 @@
 4. Set up entry-point for taking in arguments (eg: ENTRYPOINT [ "python", "pipeline.py" ])
 
 # Pipeline Basic
-''
+'''
 # verify the pandas import
 import pandas as pd
 import sys
@@ -16,7 +16,7 @@ filename = sys.argv[0]
 date = sys.argv[1]
 
 print(f"Hello from {filename}! on {date}")
-''
+'''
 
 # Postgres in Docker:
 
