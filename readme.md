@@ -22,7 +22,7 @@ print(f"Hello from {filename}! on {date}")
 
 Setup the connection using the docker command
 
-'''
+```docker
 docker run -it \  
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
@@ -30,7 +30,7 @@ docker run -it \
   -v ./data:/var/lib/postgresql/data \
   -p 5432:5432 \
 postgres:13
-'''
+```
 
 **Note:**
 If you have run Postgres before, the same ports might not be available. Kill them first with this cmds:
