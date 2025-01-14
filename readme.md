@@ -45,3 +45,7 @@ sudo kill -9 <process_id>
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-10.csv.gz
 
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv
+
+# Follow the Jupyter Notebook
+
+https://github.com/being-invincible/Intro-to-docker-and-postgres/blob/main/workwithDB.ipynb
