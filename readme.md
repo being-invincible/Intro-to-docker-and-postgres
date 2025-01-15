@@ -53,3 +53,22 @@ wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_z
 
 [workwithDB Notebook](https://github.com/being-invincible/Intro-to-docker-and-postgres/blob/main/workwithDB.ipynb)
 
+# Setup PgAdmin Client
+
+You can visit this website to find the PgAdmin image from the Docker.
+[PgAdmin Docker Container](https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html)
+
+You have to provide a few connection details as shown below to make it work!
+
+```bash
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  dpage/pgadmin4
+```
+
+Head to http://localhost:8080/
+
+![PgAdmin Client](https://github.com/user-attachments/assets/a496a9f1-2fac-47b2-b5dd-c9f3083f205a)
+
