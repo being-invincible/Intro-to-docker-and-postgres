@@ -105,3 +105,18 @@ docker run -it \
   --name pgadmin \
   dpage/pgadmin4
 ```
+
+Once, you have completed the ingestion script with arguments in a Python file. Test the script by passing arguments into it.
+```bash
+URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-10.csv.gz"
+```
+```bash
+python ingestData.py
+--user=root
+--password=root \
+--host=localhost \
+--port=5432\
+--db=ny_taxi \
+--table_name=green_taxi_data \
+--url=${URL}
+```
