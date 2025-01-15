@@ -6,7 +6,7 @@
 4. Set up an entry-point for taking in arguments (eg: ENTRYPOINT [ "python", "pipeline.py" ])
 
 # Pipeline Basic
-This is where we will implement the pipeline logic (ETL).
+This is where we will implement the pipeline logic (eg. ETL).
 
 ```python
 # verify the pandas import
