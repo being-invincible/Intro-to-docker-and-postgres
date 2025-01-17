@@ -111,8 +111,8 @@ Once, you have completed the ingestion script with arguments in a Python file. T
 URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-10.csv.gz"
 ```
 ```bash
-python uploadData.py
---user=root
+python uploadData.py \
+--user=root \
 --password=root \
 --host=localhost \
 --port=5432\
