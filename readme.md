@@ -122,3 +122,21 @@ python uploadData.py \
 --table_name=green_taxi_data \
 --url=${URL}
 ```
+
+Finally, build your docker after you change the docker file accordingly:
+```bash
+FROM python:3.9.1
+
+RUN apt-get install wget
+RUN pip install pandas sqlalchemy psycopg2
+
+WORKDIR /app
+COPY uploadData.py uploadData.py
+
+ENTRYPOINT [ "python", "uploadData.py" ]
+```
+
+Now build the docker:
+```bash
+docker build -t taxi_ingest:v001 .
+```
