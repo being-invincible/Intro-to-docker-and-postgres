@@ -95,7 +95,7 @@ docker run -it \
   --name pg-database \
   postgres:13
 ```
-**NOTE:** No spaces after the "\"
+**NOTE:** No spaces after the \
 
 Now run the pgAdmin Client in the same network created above (pg-network).
 ```bash
