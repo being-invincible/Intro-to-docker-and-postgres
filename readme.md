@@ -1,3 +1,5 @@
+This guide is to setup Postgres and the client in docker and to ingest a CSV file in the database table.
+
 # Setup the docker file
 
 1. Run Python Image (any version you need)
