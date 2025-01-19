@@ -136,7 +136,20 @@ COPY uploadData.py uploadData.py
 ENTRYPOINT [ "python", "uploadData.py" ]
 ```
 
-Now build the docker:
+Now build and run the docker:
+**Build:**
 ```bash
 docker build -t taxi_ingest:v001 .
+```
+
+**Run:**
+```bash
+docker run taxi_ingest:v001 \
+--user=root \
+--password=root \
+--host=localhost \
+--port=5432\
+--db=ny_taxi \
+--table_name=green_taxi_data \
+--url=${URL}
 ```
