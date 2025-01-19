@@ -144,8 +144,7 @@ docker build -t taxi_ingest:v001 .
 
 **Run:**
 ```bash
-docker run -it\
---network=pg-network\
+docker run -it --network=pg-network\
 taxi_ingest:v001 \
 --user=root \
 --password=root \
