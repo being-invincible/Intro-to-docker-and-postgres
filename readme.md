@@ -144,13 +144,14 @@ docker build -t taxi_ingest:v001 .
 
 **Run:**
 ```bash
-docker run -it --network=pg-network\
-taxi_ingest:v001 \
---user=root \
---password=root \
---host=localhost \
---port=5432\
---db=ny_taxi \
---table=green_taxi_data \
---url=${URL}
+docker run -it\
+  --network=pg-network\
+  taxi_ingest:v001 \
+  --user=root \
+  --password=root \
+  --host=localhost \
+  --port=5432\
+  --db=ny_taxi \
+  --table=green_taxi_data \
+  --url=${URL}
 ```
