@@ -119,7 +119,7 @@ python uploadData.py \
 --host=localhost \
 --port=5432\
 --db=ny_taxi \
---table_name=green_taxi_data \
+--table=green_taxi_data \
 --url=${URL}
 ```
 
@@ -150,6 +150,6 @@ docker run taxi_ingest:v001 \
 --host=localhost \
 --port=5432\
 --db=ny_taxi \
---table_name=green_taxi_data \
+--table=green_taxi_data \
 --url=${URL}
 ```
